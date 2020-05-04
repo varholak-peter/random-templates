@@ -1,0 +1,33 @@
+version: 1
+update_configs:
+  # Creates security updates as soon as they become available and auto-merges them into the "production" branch.
+  - package_manager: "javascript"
+    directory: "/"
+    update_schedule: "live"
+    target_branch: "production"
+    allowed_updates:
+      - match:
+          dependency_type: "production"
+          update_type: "security"
+    automerged_updates:
+      - match:
+          dependency_type: "production"
+          update_type: "security:patch"
+    version_requirement_updates: "increase_versions"
+  # Creates weekly Pull Requests with dependency updates and auto-merges devDependency updates.
+  - package_manager: "javascript"
+    directory: "/"
+    update_schedule: "weekly"
+    target_branch: "dev"
+    allowed_updates:
+      - match:
+          dependency_type: "production"
+          update_type: "all"
+      - match:
+          dependency_type: "development"
+          update_type: "all"
+    automerged_updates:
+      - match:
+          dependency_type: "development"
+          update_type: "all"
+    version_requirement_updates: "increase_versions"
