@@ -41,7 +41,7 @@ Run the following script:
 git clone https://github.com/<GH_NAME>/<REPO_NAME> (<OPTIONAL_FOLDER_NAME>)
 ```
 
-Once your repository is cloned run the following command to start in development mode:
+Once you clone the repository run the following command to start in development mode:
 
 ```
 cd <REPO_NAME or OPTIONAL_FOLDER_NAME>
