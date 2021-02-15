@@ -1,18 +1,33 @@
 <!-- Thanks for submitting a pull request! Please provide enough information so that others can review your pull request. -->
-<!-- Explain the **motivation** for making this change. What existing problem does the pull request solve? -->
-<!-- Try to link to an open issue for more information. -->
 
-<!-- In addition to that please answer these questions: -->
+# Description
+<!-- Link to any issues, PRs, or wiki entries here. -->
 
-**What kind of change does this PR introduce?**
+<!-- Example -->
+Relates to #100
 
+Closes #101
+
+Deprecates #102
+
+## List of changes this PR plans to introduce
 <!-- E.g. a bugfix, feature, refactoring, build related change, etc… -->
+<!-- Include planned changes as unchecked checkboxes for Draft PRs -->
 
-**Does this PR introduce a breaking change?**
+<!-- Example -->
+- [x] Bugfix
+- [x] Feature
+- [ ] Docs update
+
+## Migration plan
 
 <!-- If this PR introduces a breaking change, please describe the impact and a migration path for existing applications. -->
+<!-- This section can be ommited if there are no breaking changes. -->
 
-**What needs to be documented once your changes are merged?**
+<!-- Example -->
+Copy `API_URL` from `.env.example` to `.env.local`.
 
-<!-- List all the information that needs to be added to the documentation after merge -->
-<!-- When your changes are merged you will be asked to contribute this to the documentation -->
+## Screenshots
+
+<!-- Add any screenshots that could help with better understanding the proposed change. -->
+<!-- This section can be ommited if there are no screenshots. -->
